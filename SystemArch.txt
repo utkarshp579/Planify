@@ -1,0 +1,38 @@
+System Flow with One-Line Description
+
+User submits inputs
+User provides minimal travel signals such as mood, budget, trip duration, and group type.
+
+Intent normalization
+Raw user inputs are converted into structured, system-friendly parameters representing travel intent.
+
+Destination filtering
+All destinations are filtered based on feasibility constraints such as budget, available time, and season.
+
+Scoring and ranking
+Filtered destinations are scored using multiple factors and ranked by relevance to the user’s intent.
+
+Itinerary generation
+A practical, day-wise itinerary is created using top-ranked destinations and time-based constraints.
+
+Final response to user
+The system returns recommended destinations along with a ready-to-use itinerary and brief explanations.
+
+---
+
+High-Level Components Mapping
+
+Frontend
+Input collection form and results display interface.
+
+Backend API
+Handles intent normalization, destination filtering, and scoring logic.
+
+Core Logic
+Recommendation engine and itinerary generation module.
+
+External Services
+Weather API for real-time contextual data.
+
+Data Layer
+Destination data, activities, and supporting metadata.

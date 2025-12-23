@@ -1,0 +1,17 @@
+totalScore =
+  moodScore +
+  budgetScore +
+  durationScore +
+  weatherScore
+
+
+for filtering logic :- 
+    budget feasible , duration feasible , mood feasible.
+
+
+logic for scoring Duration :- 
+    | Case        | Meaning       | Experience        |
+| ----------- | ------------- | ----------------- |
+| Exact match | Perfect fit   | Ideal trip        |
+| ±1 day      | Slight adjust | Still comfortable |
+| ≥2 days     | Mismatch      | Rushed or boring  |

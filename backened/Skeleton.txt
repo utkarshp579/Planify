@@ -1,0 +1,7 @@
+config is for creating configurations for Database,
+
+controllers/ → HTTP request/response
+
+models/ → DB schema (Mongoose)
+
+services/ → business logic (exactly what filtering & scoring are)

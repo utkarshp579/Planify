@@ -1,0 +1,31 @@
+1. UserInput Model
+
+The UserInput model is used to capture the traveler’s intent with minimum friction. It includes simple, high-level inputs such as the user’s mood (for example adventure, relaxed, spiritual, or exploration), budget range (low, medium, or high), number of travel days, and group type (solo, duo, family, or friends). This model represents raw input collected from the frontend and is not used directly in decision-making logic. It acts as the starting point for intent normalization.
+
+2. Destination Model (with Embedded Activity)
+
+The Destination model represents the core data entity used across filtering, scoring, and itinerary generation. It stores essential destination-level information such as a unique identifier, destination name, category (hill, beach, city, spiritual, or nature), average daily cost, best visiting seasons, ideal trip duration, supported moods, and geographic location defined by latitude and longitude.
+
+Each destination embeds a list of Activity objects to enable fine-grained itinerary planning. An Activity represents an individual experience available at the destination and includes the activity name, activity type (outdoor, indoor, cultural, or adventure), average duration in hours, preferred time of day, weather sensitivity, and estimated cost. Embedding activities within the destination allows the system to generate realistic, day-wise travel plans without requiring separate activity lookups.
+
+This destination data is largely static and is stored in a database or JSON file.
+
+3. PlannerResponse Model
+
+The PlannerResponse model defines the final structured response returned to the frontend. It includes a list of recommended destinations with their relevance scores, a generated day-wise itinerary for the selected destination, and short textual explanations describing why specific destinations and activities were chosen.
+
+The itinerary within the response contains the destination name and a day-wise breakdown, where each day lists the planned activities along with the total estimated time required. This model is designed to be directly consumable by the frontend, enabling clear and intuitive presentation of travel recommendations and plans.
+
+
+Tech Stack:- 
+Frontend
+React + Tailwind CSS
+
+Backend
+Node.js + Express
+
+Database
+MongoDB
+
+External
+Weather API

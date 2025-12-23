@@ -1,0 +1,34 @@
+User Inputs
+
+Mood  
+Budget range  
+Number of days  
+Group type (solo / duo / family / friends)  
+
+Future Input  
+Distance preference (nearby / medium / anywhere)  
+
+---
+
+System Outputs
+
+3–5 recommended destinations  
+1 auto-generated, day-wise itinerary  
+
+---
+
+Real-Time Signal
+
+Weather  
+
+Future Addition  
+Crowd level and seasonal data  
+
+---
+
+Future Scope
+
+Visited-place checklist for journey tracking  
+Progress tracking across the trip  
+Integration with local food options  
+Integration with accommodation and activity listings

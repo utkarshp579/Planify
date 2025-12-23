@@ -1,0 +1,24 @@
+Organization
+↓
+Project
+↓
+Cluster
+↓
+Database
+↓
+Collections
+↓
+Documents
+
+
+// Creating a simple model 
+    // import --> define Schema --> Create Model 
+
+An Embedded schema is a schema nested inside another schema.
+// Embedded Activity Schema , . we create id attribute false for embedded schema
+    // Creating A schema inside schema , in one Model , preventing to creating two model.
+        // its like object inside object
+
+if not embedded , then we have to create two model , and use ref and populate, make database sow.
+
+we should not use embedded if quick updates , data is shared between parents. 
