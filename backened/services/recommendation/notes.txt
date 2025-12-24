@@ -15,3 +15,7 @@ logic for scoring Duration :-
 | Exact match | Perfect fit   | Ideal trip        |
 | ±1 day      | Slight adjust | Still comfortable |
 | ≥2 days     | Mismatch      | Rushed or boring  |
+
+
+logic for generating itinerary
+

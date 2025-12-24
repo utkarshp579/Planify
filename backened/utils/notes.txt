@@ -1,0 +1,16 @@
+buildExplanations.js --> giving explaination
+input
+{
+  scoredDestination,   // one item from scoreDestinations
+  userInput,
+  currentSeason
+}
+
+output
+[
+  "Fits your relaxed travel mood",
+  "Comfortable within your medium budget",
+  "Ideal for a 3-day trip",
+  "Mostly weather-safe activities this season"
+]
+

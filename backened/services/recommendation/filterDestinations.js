@@ -9,7 +9,7 @@ const BUDGET_LIMITS = {
  * Removes destinations that are unfeasible.
  */
 const filterDestinations = (userInput, destinations) => {
-    const { mood, budgetRange } = userInput;
+    const { mood, budgetRange , days} = userInput;
     const budgetLimit = BUDGET_LIMITS[budgetRange];
 
     return destinations.filter(dest => {
