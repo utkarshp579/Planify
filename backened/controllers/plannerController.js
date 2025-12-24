@@ -22,11 +22,12 @@ export const generateTravelPlan = async (req, res) => {
         buildPlannerResponse({
           recommendedDestinations: [],
           itinerary: null,
-          explanations: ["No destinations match your preferences"],
+          explanations: [
+            "No destinations match your preferences. Try increasing budget or days.",
+          ],
         })
       );
     }
-
     /* 3️⃣ Season detection (temporary) */
     const currentSeason = "winter"; // will make dynamic using web api , future scope
     /* 4️⃣ Scoring */

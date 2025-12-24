@@ -8,7 +8,8 @@ export const generatePlan = async (payload) => {
   });
 
   if (!res.ok) {
-    throw new Error("Failed to fetch plan");
+    const err = await res.json().catch(() => ({}));
+    throw new Error(err.message || "Failed to fetch plan");
   }
 
   return res.json();
