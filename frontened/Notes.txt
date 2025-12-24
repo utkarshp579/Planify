@@ -1,0 +1,15 @@
+Collect user input
+Call /api/plan
+Render response
+
+
+Inputs
+Mood (select)
+Budget range (select)
+Days (number)
+Group type (select)
+
+Output
+Top destination name
+Itinerary (day-wise)
+Explanations (bullets)
